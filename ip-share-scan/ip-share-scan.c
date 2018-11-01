@@ -22,14 +22,14 @@ int main(int argc,char* argv[])
       struct smbc_dirent* a;
       while(a=smbc_readdir(dirHandle))
       {
-	  if(a->smbc_type==SMBC_DIR||a->smbc_type==SMBC_FILE_SHARE)
-	  {
-		  printf("%s%s<*>",a->name,"SDR");
-	  }
-	  else if(a->smbc_type==SMBC_FILE)
-	  {
-		  printf("%s%s<*>",a->name,"SFE");
-	  }
+          if(a->smbc_type==SMBC_DIR||a->smbc_type==SMBC_FILE_SHARE)
+          {
+              printf("%s%s<*>",a->name,"SDR");
+          }
+          else if(a->smbc_type==SMBC_FILE)
+          {
+              printf("%s%s<*>",a->name,"SFE");
+          }
 	  
       }
       smbc_closedir(dirHandle);
@@ -44,17 +44,17 @@ int main(int argc,char* argv[])
       struct smbc_dirent* a;
       while(a=smbc_readdir(dirHandle))
       {
-	  if(a->smbc_type==SMBC_DIR||a->smbc_type==SMBC_FILE_SHARE)
-	  {
-		  printf("%s%s<*>",a->name,"SDR");
-	  }
-	  else if(a->smbc_type==SMBC_FILE)
-	  {
-		  printf("%s%s<*>",a->name,"SFE");
-	  }
+          if(a->smbc_type==SMBC_DIR||a->smbc_type==SMBC_FILE_SHARE)
+          {
+              printf("%s%s<*>",a->name,"SDR");
+          }
+          else if(a->smbc_type==SMBC_FILE)
+          {
+              printf("%s%s<*>",a->name,"SFE");
+          }
 	  
-  }
-  smbc_closedir(dirHandle);
+      }
+      smbc_closedir(dirHandle);
   }
 
   

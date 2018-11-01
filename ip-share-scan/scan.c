@@ -57,7 +57,7 @@ void send_query(int sock, struct in_addr dest_addr, uint32_t rtt_base){
 struct nb_host_info* parse_response(char* buff, int buffsize) {
 	struct nb_host_info* hostinfo = NULL;
 	int name_table_size;
-	int offset = 0;
+    unsigned offset = 0;
 	
 	if((hostinfo = malloc(sizeof(struct nb_host_info)))==NULL) return NULL;
     hostinfo->names = NULL;

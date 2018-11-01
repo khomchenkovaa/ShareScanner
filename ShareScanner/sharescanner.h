@@ -13,7 +13,7 @@
 #include <QUrl>
 #include <QProcess>
 #include <QClipboard>
-#include <Qt/qtest.h>
+#include <QtTest/QtTest>
 #include <QTreeWidgetItem>
 #include <aboutdialog.h>
 

@@ -242,6 +242,8 @@ void ShareScanner::scan()
         path = "/usr/bin/ip-share-scan";
     else if(QFile::exists("/opt/sharescanner/ip-share-scan"))
         path = "/opt/sharescanner/ip-share-scan";
+    else if(QFile::exists("../ip-share-scan/ip-share-scan"))
+        path = "../ip-share-scan/ip-share-scan";
     else if(QFile::exists("./ip-share-scan"))
         path = "./ip-share-scan";
     else

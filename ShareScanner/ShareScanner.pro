@@ -6,7 +6,8 @@
 
 QT       += core gui
 QT       += network
-CONFIG   += qtestlib
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += testlib
 
 TARGET = ShareScanner
 TEMPLATE = app
@@ -24,5 +25,3 @@ FORMS    += sharescanner.ui \
     aboutdialog.ui
 
 RESOURCES += SSres.qrc
-
-unix:!macx:!symbian: LIBS += -lsmbclient
